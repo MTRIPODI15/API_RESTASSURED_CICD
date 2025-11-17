@@ -19,7 +19,7 @@ public class ClimateTest {
             .get("https://api.openweathermap.org/data/2.5/weather")
             .then()
             .statusCode(200)
-            .body("name", equalTo("Cordoba"))
+            .body("name", equalTo("Córdoba"))
             .body("main.temp", notNullValue());
     }
 }
